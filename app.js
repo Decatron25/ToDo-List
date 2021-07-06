@@ -25,18 +25,18 @@ const itemsSchema = new mongoose.Schema({
 const Item = mongoose.model("Item", itemsSchema);
 
 const item1 = new Item({
-  name: "module 28"
+  name: "Start adding items to your list!"
 });
+//
+// const item2 = new Item({
+//   name: "Trees"
+// });
+//
+// const item3 = new Item({
+//   name: "Project research"
+// });
 
-const item2 = new Item({
-  name: "Trees"
-});
-
-const item3 = new Item({
-  name: "Project research"
-});
-
-const defaultItemsList = [item1, item2, item3];
+const defaultItemsList = [item1];
 
 const listSchema = new mongoose.Schema({
   name: String,
